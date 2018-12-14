@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Селекторы</title>
+</head>
+<body>
+
+<div class="pyaterochka">
+	<div class="apple">Яблоки из "Пятерочки"</div>
+</div>
+
+<div class="magnit">
+	<div class="apple">Яблоки из "Магнита"</div>
+</div>
+
+<div class="orange">Апельсины</div>
+<div class="orange">Апельсины</div>
+<div class="orange pineapples">Апельсины с ананасами</div>
+<div class="pineapples">Ананасы</div>
+
+<style>
+	/* Элемент с двумя классами */
+	.orange {
+		background: yellow;
+	}
+	.pineapples {
+		color: red;
+	}
+	.orange.pineapples {
+		font-weight: bold;
+	}
+
+	/* Элемент внутри элемента */
+	.apple {
+		font-size: 30px;
+	}
+	.pyaterochka .apple {
+		background: green;
+	}
+
+	.magnit .apple {
+		background: orange;
+	}
+</style>
+
+</body>
+</html>
