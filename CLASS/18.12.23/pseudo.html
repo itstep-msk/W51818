@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pseudo</title>
+</head>
+<body>
+
+
+<div>
+	<div class="apple"></div>
+	<div class="apple"></div>
+	<div class="apple"></div>
+	<div class="apple"></div>
+	<div class="apple"></div>
+</div>
+<!-- 
+Transition - анимирует плавный преход
+-->
+<style>
+	.apple {
+		width: 100px;
+		height: 100px;
+		background: green;
+		transition: all, .25s;
+		margin: auto;
+	}
+	.apple:hover {
+		background: yellow;
+		width: 150px;
+	}
+	.apple:first-child {
+		background: orange;
+	}
+	.apple:last-child {
+		background: red;
+	}
+	.apple:nth-child(2):hover {
+		background: blue
+	}
+	.apple:nth-child(odd) {
+		background: purple;
+	}
+	.apple:nth-child(even) {
+		background: aqua;
+	}
+</style>
+
+</body>
+</html>

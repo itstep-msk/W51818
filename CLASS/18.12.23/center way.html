@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Center way</title>
+</head>
+<body>
+
+<div class="way01"></div>
+<div class="parent">
+	<div class="way02"></div>
+</div>
+<div class="way03"></div>
+
+<style>
+	.way01, .way02, .way03 {
+		width: 100px;
+		height: 100px;
+	}
+	.way01 {
+		background: green;
+		margin: auto;
+		/*margin: 0 auto;*/
+	}
+	.way02 {
+		background: yellow;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.parent {
+		text-align: center;
+	}
+	.way03 {
+		background: orange;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+</style>
+
+</body>
+</html>
