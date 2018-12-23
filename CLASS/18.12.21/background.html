@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Background</title>
+</head>
+<body>
+
+<div class="pontiac"></div>
+<div class="gradient"></div>
+<!-- <img src="pontiac.jpg" width="100px"> -->
+<style>
+	.gradient {
+		width: 100px;
+		height: 100px;
+		background: linear-gradient(45deg,green 10px, red, blue 100px)
+	}
+	.pontiac {
+		width: 100px;
+		height: 100px;
+		background-image: url(pontiac.jpg);
+		/* Изображение 400x200, Все не влезает*/
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+</style>
+
+</body>
+</html>

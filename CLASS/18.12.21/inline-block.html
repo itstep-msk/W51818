@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Block, Inline, Inline-block</title>
+</head>
+<body>
+
+<style>
+	.block {
+		width: 150px;
+		display: block;
+		background: green;
+		padding: 10px;
+		margin: 10px;
+		border: 10px solid orange;
+	}
+	.inline {
+		width: 1000px;
+		display: inline;
+		background: yellow;
+		padding: 10px; /* Работает со всех сторон */
+		margin: 10px; /* Работает только left и right */
+		border: 10px dashed orange;
+	}
+	.inline-block {
+		background: red;
+		display: inline-block;
+		width: 200px;
+		height: 100px;
+		padding: 10px;
+		margin: 10px;
+		border: 10px dotted orange;
+	}
+</style>
+
+<div class="block">Блочный элемент</div>
+<div class="block">Блочный элемент</div>
+<div class="inline">Инлайновый элемент</div>
+<div class="inline">Инлайновый элемент</div>
+
+<div class="inline-block">Инлайн-блочный элемент</div>
+<div class="inline-block">Инлайн-блочный элемент</div>
+
+</body>
+</html>

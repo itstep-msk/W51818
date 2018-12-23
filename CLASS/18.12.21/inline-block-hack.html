@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inline-block hack</title>
+</head>
+<body>
+
+<style>
+	.orange,
+	.apple,
+	.plum,
+	.carrot,
+	.potato,
+	.tomato,
+	.rose,
+	.tulip,
+	.lily {
+		width: 100px;
+		height: 100px;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.orange {
+		background: orange;
+	}
+	.apple {
+		background: green;
+	}
+	.plum {
+		background: purple;
+	}
+	.carrot {
+		background: yellow;
+	}
+	.potato {
+		background: brown;
+	}
+	.tomato {
+		background: red;
+	}
+	.rose {
+		background: pink;
+	}
+	.tulip {
+		background: blue;
+	}
+	.lily {
+		background: bisque;
+	}
+	/* HACK 1st */
+	.apple {
+		margin-left: -4px;
+	}
+	.plum {
+		margin-left: -4px;
+	}
+	/* HACK 2nd */
+	.vegetables {
+		font-size: 0;
+	}
+	.carrot, .potato, .tomato {
+		font-size: 16px;
+	}
+	/* HACK 3rd */
+</style>
+
+<div class="fruits">
+	<div class="orange"></div>
+	<div class="apple"></div>
+	<div class="plum"></div>
+</div>
+<div class="vegetables">
+	<div class="carrot">carrot</div>
+	<div class="potato">potato</div>
+	<div class="tomato">tomato</div>
+</div>
+<div class="flowers">
+	<div class="rose"></div><div class="tulip"></div><div class="lily"></div>
+</div>
+
+</body>
+</html>
