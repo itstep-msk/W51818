@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media block</title>
+</head>
+<body>
+
+<div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+</div>
+
+<style>
+	.box {
+		width: 33%;
+		height: 100px;
+		background: green;
+		border: 10px solid yellow;
+		display: inline-block;
+		margin-left: -4px;
+		box-sizing: border-box;
+	}
+	.box:first-child {
+		margin-left: 0;
+	}
+	@media (max-width: 1000px) {
+		.box {
+			width: 50%
+		}
+		.box:last-child {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+	@media (max-width: 500px) {
+		.box {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+</style>
+
+</body>
+</html>
