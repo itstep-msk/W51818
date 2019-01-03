@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keyframes</title>
+</head>
+<body>
+
+<div class="cat"></div>
+
+<style>
+	.cat {
+		width: 100px;
+		height: 100px;
+		background: grey;
+		animation: moving 10s linear infinite;
+	}
+
+	@keyframes moving {
+		0% {
+			transform: rotateZ(0deg);
+			margin-left: 0px;
+			filter: blur(0px);
+		}
+
+		50% {
+			transform: rotateZ(360deg);
+			margin-left: 400px;
+			filter: blur(50px);
+		}
+
+		100% {
+			transform: rotateZ(0deg);
+			margin-left: 0px;
+			filter: blur(0px);
+		}
+	}
+	/*
+	@keyframes названиеАнимации {
+		0% {
+			Кадры
+		}
+		100% {
+			Кадры
+		}
+	}
+	*/
+</style>
+
+</body>
+</html>
